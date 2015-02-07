@@ -49,6 +49,9 @@ import urllib2
 import os.path
 import logging
 import webbrowser
+import ssl
+
+ssl._create_default_https_context = ssl._create_unverified_context
 
 # Smartly import hashlib and fall back on md5
 try:
